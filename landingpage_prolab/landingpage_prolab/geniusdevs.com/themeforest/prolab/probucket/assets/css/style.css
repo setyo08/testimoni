@@ -244,8 +244,8 @@
 }
 
 .mybtn-bg {
-  background: #EA384D;
-  border-color: #EA384D;
+  background: #0250c5;
+  border-color: #0250c5;
   color: #fff;
 }
 
@@ -254,7 +254,7 @@
 }
 
 .mybtn-bg:hover span {
-  color: #EA384D;
+  color: #0250c5;
 }
 
 .mybtn-light {
@@ -263,7 +263,7 @@
 
 .mybtn-light:before,
 .mybtn-light:after {
-  background: #EA384D;
+  background: #0250c5;
 }
 
 .mybtn-light:hover span {
@@ -271,21 +271,21 @@
 }
 
 .mybtn-light span {
-  color: #EA384D;
+  color: #0250c5;
 }
 
 .mybtn-bord {
   background: transparent;
-  border: 1px solid #EA384D;
+  border: 1px solid #0250c5;
 }
 
 .mybtn-bord:before,
 .mybtn-bord:after {
-  background: #EA384D;
+  background: #0250c5;
 }
 
 .mybtn-bord:hover {
-  border-color: #EA384D;
+  border-color: #0250c5;
 }
 
 .mybtn-bord:hover span {
@@ -3022,7 +3022,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 0px 0px 300px 0px;
 }
 .home5 .hero-area .shape {
@@ -3045,7 +3045,7 @@ select:focus {
 }
 .home5 .hero-area .discount-circle-inner {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .about {
   position: relative;
@@ -3058,13 +3058,13 @@ select:focus {
 }
 .home5 .about .box .inner-box .icon i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .home5 .about .box::after {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   opacity: 1;
   width: 100%;
   height: 0%;
@@ -3101,7 +3101,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .whaybest .shape {
@@ -3127,7 +3127,7 @@ select:focus {
 }
 .home5 .feature .feature-box .icon-area .icon i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3144,7 +3144,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .dealofweek .shape {
@@ -3165,7 +3165,7 @@ select:focus {
 }
 .home5 .pricing .product-slider .owl-controls .owl-nav div:hover {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .video {
   position: relative;
@@ -3180,7 +3180,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .video .shape {
@@ -3200,7 +3200,7 @@ select:focus {
 .home5 .video .fun-box .inner-content2 .icon i,
 .home5 .video .fun-box .inner-content3 .icon i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3217,7 +3217,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 200px 0px 200px 0px;
 }
 .home5 .testimonial-area .shape {
@@ -3242,11 +3242,11 @@ select:focus {
 }
 .home5 .testimonial-area .testimonial-slider .owl-controls .owl-nav div:hover {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .testimonial-area .testimonial-slider .client .client-image::after {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .subscribe-section .download-buttons {
   margin-top: 55px;
@@ -3259,7 +3259,7 @@ select:focus {
 }
 .home5 .subscribe-section .download-buttons a {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   display: inline-block;
   padding: 18px 30px;
   font-size: 18px;
@@ -3272,7 +3272,7 @@ select:focus {
 }
 .home5 .subscribe-section .newsletter-form-area button {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   cursor: pointer;
 }
 .home5 .faq {
@@ -3288,7 +3288,7 @@ select:focus {
   top: 0px;
   left: 0px;
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   border-radius: 200px 0px 200px 0px;
   z-index: -1;
 }
@@ -3310,7 +3310,7 @@ select:focus {
 }
 .home5 .contact .info-box .left .icon i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3320,7 +3320,7 @@ select:focus {
 }
 .home5 .footer {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .footer .footer-info-area .text p,
 .home5 .footer .copy-bg p,
@@ -3329,13 +3329,13 @@ select:focus {
 }
 .home5 .bottomtotop i {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .compare-section .compare-table .price,
 .home5 .pricing .product-slider .item .single-product .content .price .new-price,
 .home5 .dealofweek .deal-slider-area .content .right-area .price p span {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -3348,19 +3348,19 @@ select:focus {
 }
 .home5 .navigation .navbar #mainmenu ul .nav-item.dropdown:hover .dropdown-menu .dropdown-item:hover {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .preloader-inner {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link:hover::before, .home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link.active::before {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .navigation.stiky-nav .navbar #mainmenu ul .nav-item .nav-link::before {
   background: #D31027;
-  background: linear-gradient(to right, #EA384D, #D31027);
+  background: linear-gradient(to right, #0250c5, #D31027);
 }
 .home5 .footer {
   position: relative;

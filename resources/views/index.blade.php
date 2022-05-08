@@ -5,14 +5,14 @@
     border-radius:50%; 
     height:80px; 
     width:40%; 
-    border: 5px solid #5720D4; 
+    border: 5px solid hsl(258, 74%, 48%); 
     position: relative; 
     top: -20px;
   }
   .btn-modif {
-    background-color: #651DD0; /* Green */
+    background-color: hsl(258, 74%, 48%); /* Green */
     border: none;
-    color: white;
+    color: hsl(258, 0%, 100%);
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -20,15 +20,79 @@
     font-size: 12px;
     cursor: pointer;
   }
+  .btn-modif:hover{
+    background-color: hsl(258, 0%, 100%);
+    color:  hsl(258, 74%, 48%);
+  }
   .card-container:hover *, p.text-title:hover {
     color:white;
   }
   .text-title {
     font-size: 12px;
   }
-</style>
+
+  .home9 .hero-area {
+      padding: 120px 0px 120px;
+  }
+  </style>
+</head>
+  <body class="home9">
+  
+    <!-- Navebar Area start -->
+    <header class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="{{route('index')}}">
+                  <h3 class="mt-2"><b>Feedback</b></h3>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu"
+                aria-controls="mainmenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mainmenu">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ request()->is('news*') ? '/' : '#home' }}">Home</a>
+                  </li>
+                  @if(!request()->is('news*'))
+                  <li class="nav-item">
+                      <a class="nav-link" href="#testimonial-area">Ulasan</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#contact">Kontak</a>
+                  </li>
+                  @endif
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('news.index') }}">Berita <span class="font-weight-bold" style="margin-left:10px;">|</span></a>
+                  </li>
+                  @auth
+                  <li class="nav-item">
+                      <a class="nav-link" data-toggle="modal" data-target="#account">{{session()->get('user')->nama ?? ''}}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{route('logout')}}">Sign Out</a>
+                  </li>
+                  @endauth
+                  
+                  @guest
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('register') }}">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('login') }}">Sign In</a>
+                  </li>
+                  @endguest
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
 <div id="home" class="hero-area">
-  <img class="shape" src="assets/images/bg-shape.png" alt="">
+  <img class="shape" src="asset/images/bg-shape.png" alt="">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-6 d-flex align-self-center">
@@ -46,19 +110,22 @@
             </div>
             @endguest
           </div>
+          
         </div>
       </div>
       <div class="col-lg-4 order-first order-lg-last">
-        <div class="right-img">
-          <img class="img-fluid img" src="assets/images/w4.png" alt="">
-        </div>
+        
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img height="100%" src="asset/images/w1.png" alt=""></div>
+            <div class="item"><img height="100%" src="asset/images/w2.png" alt=""></div>
+            <div class="item"><img height="100%" src="asset/images/w3.png" alt=""></div>
+      </div>
       </div>
     </div>
   </div>
 </div>
 <!-- Hero Area End -->
 <!-- Testimonial Area Start -->
-
 <section class="about" id="testimonial-area">
   <div class="container">
       <div class="row justify-content-center">
@@ -69,89 +136,46 @@
           </div>
       </div>
       </div>
+
       <div class="row">
-      <div class="col-lg-4">
-          <div class="box card-container" style="background: #cacfcb;">
+        <div class="col-lg-4">
+          <div class="box">
             <div class="inner-box">
                 <div class="icon">
-                  <img src="/asset/images/testimonialimage/sarpras.png" class="img-fluid card-img">
+                  <i class="flaticon-delivery-truck"></i>
                 </div>
-                <a href="{{ route('testimonial.detail', 'sarpras') }}"><p class="text-title">Semua ulasan terkait sarana dan prasarana dikemas dalam tombol berikut</p></a>
-                <a href="{{ route('testimonial.detail', 'sarpras') }}" class="btn-modif">TESTIMONIAL SARANA DAN PRASARANA</a>
+                <a href="{{ route('testimonial.detail', 'sarpras') }}"><h4 class="title">Semua ulasan terkait sarana dan prasarana dikemas dalam tombol berikut</h4></a>
+                <a href="{{ route('testimonial.detail', 'sarpras') }}"><button class="btn-modif"> TESTIMONIAL SARANA DAN PRASARANA</button> </a>
             </div>
           </div>
-      </div>
-      <div class="col-lg-4">
-          <div class="box card-container" style="background: #cacfcb;">
-            <div class="inner-box">
-                <div class="icon">
-                  <img src="/asset/images/testimonialimage/administrasi.png" class="img-fluid card-img">
-                </div>
-                <a href="{{ route('testimonial.detail', 'administrasi') }}"><p class="text-title">Semua ulasan terkait administrasi dikemas dalam tombol berikut</p></a>
-                <a href="{{ route('testimonial.detail', 'administrasi') }}" class="btn-modif">TESTIMONIAL ADMINISTRASI</a>
-            </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-        <div class="box card-container" style="background: #cacfcb;">
+        </div>
+        <div class="col-lg-4"> 
+          <div class="box">
           <div class="inner-box">
               <div class="icon">
-                <img src="/asset/images/testimonialimage/akademik.png" class="img-fluid card-img">
+                <i class="flaticon-art"></i>
               </div>
-              <a href="{{ route('testimonial.detail', 'akademik') }}"><p class="text-title">Semua ulasan terkait bidang akademik kampus dikemas dalam tombol berikut</p></a>
-              <buttoa href="{{ route('testimonial.detail', 'akademik') }}" class="btn-modif">TESTIMONIAL BIDANG AKADEMIK</buttoa>
+              <a href="{{ route('testimonial.detail', 'administrasi') }}"><h4 class="title">Semua ulasan terkait administrasi kuliah dikemas dalam tombol berikut</h4></a>
+              <a href="{{ route('testimonial.detail', 'administrasi') }}" ><button class="btn-modif">TESTIMONIAL ADMINISTRASI</button> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="box">
+            <div class="inner-box">
+              <div class="icon">
+                <i class="flaticon-apps"></i>
+              </div>
+              <a href="{{ route('testimonial.detail', 'akademik') }}"><h4 class="title">Semua ulasan terkait bidang akademik kampus dikemas dalam tombol berikut</h4></a>
+              <a href="{{ route('testimonial.detail', 'akademik') }}" ><button class="btn-modif">TESTIMONIAL BIDANG AKADEMIK</button> </a>
+            </div>
           </div>
         </div>
     </div>
   </div>
 </section>
 <!-- Testimonial Area End -->
-<section class="about" id="about">
-  <div class="container">
-      <div class="row justify-content-center">
-      <div class="col-md-10 col-lg-8">
-          <div class="section-title extra">
-            <h2 class="title">Mengapa Feedback yang terbaik</h2>
-            <p>Berikut ini kelebihan Kami dalam memberikan pelayanan</p>
-          </div>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col-lg-4">
-          <div class="box">
-          <div class="inner-box">
-              <div class="icon">
-              <i class="flaticon-art"></i>
-              </div>
-              <h4 class="title">Interaktif</h4>
-              <p class="text">Tampilan yang interaktif sehingga mudah digunakan oleh pengguna</p>
-          </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-          <div class="box">
-          <div class="inner-box">
-              <div class="icon">
-              <i class="flaticon-apps"></i>
-              </div>
-              <h4 class="title">Daring</h4>
-              <p class="text">Dengan memanfaatkan daring survei dapat dilakukan dimana dan kapan saja</p>
-          </div>
-          </div>
-      </div>
-      <div class="col-lg-4">
-          <div class="box">
-          <div class="inner-box">
-              <div class="icon">
-              <i class="flaticon-apps"></i>
-              </div>
-              <h4 class="title">Aman</h4>
-              <p class="text">Data yang Anda berikan akan dikelola dengan aman</p>
-          </div>
-          </div>
-      </div>
-  </div>
-</section>
+
 <section class="contact" id="contact">
   <div class="container">
       <div class="row justify-content-center">
@@ -287,4 +311,5 @@
     </div>
   </div>
 </section>
+
 @endsection
