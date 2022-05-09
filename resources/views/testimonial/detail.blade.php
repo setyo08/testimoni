@@ -1,9 +1,5 @@
 @extends('layouts.home')
-<style>
-  .card-img {
 
-  }
-</style>
   <!-- favicon -->
   <link rel="shortcut icon" href="asset/images/favicon.png" type="image/x-icon">
   <!-- bootstrap -->
