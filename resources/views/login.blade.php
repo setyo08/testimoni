@@ -4,7 +4,7 @@
 
     <body>
     <div class="content d-flex justify-content-center">
-        <div class="col-xl-4 col-lg-6 col-md-8 col-12">
+        <div class="col-xl-4 col-lg-6 col-md-8 col-12 mt-4">
             
                 <div class="card">
                     <div class="card-header">
@@ -20,7 +20,8 @@
                     </div>
                     @endif
                         <div class="text-center mt-4">
-                            <h1><b>Sign In</b></h1>
+                            <h3><b>MASUK</b></h3>
+                            <p>Silahkan masuk dengan akun anda</p>
                         </div>
                     </div>
                     <div class="card-body">

@@ -12,7 +12,8 @@
                             </svg></a>
                         </div>
                         <div class="text-center mt-4">
-                            <h2><b>Form Registrasi</b></h2>
+                            <h3><b>Form Registrasi</b></h3>
+                            <p>Silahkan daftarkan identitas anda</p>
                         </div>
                     </div>
                     <div class="card-body">
