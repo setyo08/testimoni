@@ -1,29 +1,8 @@
 @extends('layouts.home')
-<style>
-
-</style>
-  <!-- favicon -->
-  <link rel="shortcut icon" href="asset/images/favicon.png" type="image/x-icon">
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="{{ url('asset/css/bootstrap.min.css') }}">
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="{{ url('asset/css/fontawesome.min.css') }}">
-  <!-- Flat Icon -->
-  <link rel="stylesheet" href="{{ url('asset/css/flaticon.css') }}">
-  <!-- animate -->
-  <link rel="stylesheet" href="{{ url('asset/css/animate.css') }}">
-  <!-- Owl Carousel -->
-  <link rel="stylesheet" href="{{ url('asset/css/owl.carousel.min.css') }}">
-  <!-- magnific popup -->
-  <link rel="stylesheet" href="{{ url('asset/css/magnific-popup.css') }}">
-  <!-- AOS css -->
-  <link rel="stylesheet" href="{{ url('asset/css/aos.css') }}">
-  <!-- stylesheet -->
-  <link rel="stylesheet" href="{{ url('asset/css/style.css') }}">
-  <!-- responsive -->
-  <link rel="stylesheet" href="{{ url('asset/css/responsive.css') }}">
 @section('content') 
-
+</head>
+<body>
+  
 <section class="about" id="about">
   <div class="container">
       <div class="row justify-content-center">
@@ -40,7 +19,7 @@
             <div class="box">
             <div class="inner-box">
                 <div class="icon">
-                  <a style="position: absolute; border-radius:0%;" href="{{ route('news.show', $new->id) }}" class="btn btn-primary btn-sm">Lihat Detail</a>
+                  <a style="position: absolute; top: 0; right: 0;" href="{{ route('news.show', $new->id) }}" class="mybtn3 mybtn-bg">Lihat Detail</a>
                   <img src="{{ $new->image }}" alt="">
                 </div>
                 <h4 class="title">{{ $new->title }}
