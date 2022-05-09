@@ -190,16 +190,16 @@
       }
 
       .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link::before {
-        background: #D31027; 
-        background: -webkit-linear-gradient(to right, #EA384D, #D31027); 
-        background: linear-gradient(to right, #EA384D, #D31027); 
+        background: #0250c5; 
+        background: -webkit-linear-gradient(to right, #0250c5, #0250c5); 
+        background: linear-gradient(to right, #0250c5, #0250c5); 
       }
       
       .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link:hover::before, 
       .home5 .navigation .navbar #mainmenu ul .nav-item .nav-link.active::before {
-        background: #D31027; 
-        background: -webkit-linear-gradient(to right, #EA384D, #D31027); 
-        background: linear-gradient(to right, #EA384D, #D31027); 
+        background: #0250c5; 
+        background: -webkit-linear-gradient(to right, #0250c5, #0250c5); 
+        background: linear-gradient(to right, #0250c5, #0250c5); 
       }
 
       #mainmenu ul.navbar-nav{
