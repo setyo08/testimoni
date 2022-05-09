@@ -25,7 +25,11 @@
   <!-- responsive -->
   <link rel="stylesheet" href="{{ url('asset/css/responsive.css') }}">
 @section('content') 
-
+</head>
+@php
+use Carbon\Carbon;
+endphp
+<body>
 <section class="about" id="about">
   <div class="container">
       <div class="row justify-content-center">
