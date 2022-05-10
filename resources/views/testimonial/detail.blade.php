@@ -1,9 +1,5 @@
 @extends('layouts.home')
-<style>
-  .card-img {
 
-  }
-</style>
   <!-- favicon -->
   <link rel="shortcut icon" href="asset/images/favicon.png" type="image/x-icon">
   <!-- bootstrap -->
@@ -25,7 +21,11 @@
   <!-- responsive -->
   <link rel="stylesheet" href="{{ url('asset/css/responsive.css') }}">
 @section('content') 
-
+</head>
+@php
+use Carbon\Carbon;
+endphp
+<body>
 <section class="about" id="about">
   <div class="container">
       <div class="row justify-content-center">
@@ -45,21 +45,21 @@
                   @if($status =='sarpras')
                   <img src="/asset/images/testimonialimage/sarpras.png" style="border-radius:50%; 
                   height:80px; 
-                  width:40%; 
+                  width:80px; 
                   border: 5px solid #5720D4; 
                   position: relative; 
                   top: -20px;">
                   @elseif($status =='administrasi')
                   <img src="/asset/images/testimonialimage/administrasi.png" style="border-radius:50%; 
                   height:80px; 
-                  width:40%; 
+                  width:80px; 
                   border: 5px solid #5720D4; 
                   position: relative; 
                   top: -20px;">
                   @else
                   <img src="/asset/images/testimonialimage/akademik.png" style="border-radius:50%; 
                   height:80px; 
-                  width:40%; 
+                  width:80px; 
                   border: 5px solid #5720D4; 
                   position: relative; 
                   top: -20px;">
